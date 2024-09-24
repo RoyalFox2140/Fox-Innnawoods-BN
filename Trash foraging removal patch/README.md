@@ -1,8 +1,3 @@
-# Fox Innnawoods BN
- An Innawoods mod for an Earth untouched by humans
-
- To get started, you will need to drop the folder in your Mods folder. This is best done outside the data folder, in the mods folder next to your exe.
-
  To disable all trash spawns from foraging YOU MUST install the provided patch. Drop the data folder included in the patch folder inside the folder with the exe file.
  This will automatically put the single file in the right place, and overwrite just the foraging results.
 
