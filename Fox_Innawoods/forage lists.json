@@ -5,7 +5,7 @@
     "subtype": "distribution",
     "entries": [
       { "item": "carrot", "prob": 2, "count-min": 1, "count-max": 2 },
-      { "item": "broccoli", "prob": 2, "count-min": 1, "count-max": 2 },
+      { "item": "broccoli", "prob": 2, "count-min": 1, "count-max": 2 }
     ]
   },
   {
@@ -21,7 +21,7 @@
       { "item": "wheat", "prob": 2, "count-min": 1, "count-max": 2 },
       { "item": "spinach", "prob": 2, "count-min": 1, "count-max": 2 },
       { "item": "oats", "prob": 1, "count-min": 1, "count-max": 2 },
-      { "item": "seed_cotton_boll", "prob": 2, "count-min": 1, "count-max": 2 },
+      { "item": "seed_cotton_boll", "prob": 2, "count-min": 1, "count-max": 2 }
     ]
   },
   {
