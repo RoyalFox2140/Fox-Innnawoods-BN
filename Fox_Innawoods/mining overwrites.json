@@ -1,0 +1,102 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_boulder_small",
+    "copy-from": "f_boulder_small",
+    "name": "small boulder",
+    "symbol": "o",
+    "color": "dark_gray",
+    "bash": {
+      "str_min": 16,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [
+        { "item": "rock", "count": [ 16, 26 ] },
+        { "item": "sharp_rock", "count": [ 0, 6 ] },
+        { "item": "scrap_copper", "count": [ 0, 7 ] },
+        { "item": "Fox_sphalerite", "count": [ 0, 1 ] },
+        { "item": "Fox_cassiterite", "count": [ 0, 2 ] },
+        { "item": "material_limestone", "charges": [ 3, 8 ], "prob": 80 },
+        { "group": "rock_mining_extra", "prob": 8 }
+      ],
+      "//": "Stone obstacles have double the expected reduction but lower destroy_threshold in return",
+      "ranged": { "reduction": [ 16, 32 ], "destroy_threshold": 32, "block_unaimed_chance": "25%" }
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_boulder_medium",
+    "copy-from": "f_boulder_medium",
+    "name": "medium boulder",
+    "symbol": "0",
+    "color": "dark_gray",
+    "bash": {
+      "str_min": 32,
+      "str_max": 80,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [
+        { "item": "rock", "count": [ 35, 45 ] },
+        { "item": "sharp_rock", "count": [ 3, 7 ] },
+        { "item": "scrap_copper", "count": [ 3, 12 ] },
+        { "item": "Fox_sphalerite", "count": [ 0, 2 ] },
+        { "item": "Fox_cassiterite", "count": [ 1, 4 ] },
+        { "item": "material_limestone", "charges": [ 5, 15 ], "prob": 80 },
+        { "group": "rock_mining_extra", "prob": 15 }
+      ],
+      "ranged": { "reduction": [ 32, 64 ], "destroy_threshold": 64, "block_unaimed_chance": "50%" }
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_boulder_large",
+    "copy-from": "f_boulder_large",
+    "name": "large boulder",
+    "symbol": "O",
+    "color": "dark_gray",
+    "bash": {
+      "str_min": 64,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [
+        { "item": "rock", "count": [ 45, 65 ] },
+        { "item": "sharp_rock", "count": [ 4, 7 ] },
+        { "item": "scrap_copper", "count": [ 7, 12 ] },
+        { "item": "Fox_sphalerite", "count": [ 1, 6 ] },
+        { "item": "Fox_cassiterite", "count": [ 2, 8 ] },
+        { "item": "material_limestone", "charges": [ 8, 20 ], "prob": 80 },
+        { "group": "rock_mining_extra", "prob": 20 }
+      ],
+      "ranged": { "reduction": [ 64, 128 ], "destroy_threshold": 128 }
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rock",
+    "copy-from": "t_rock",
+    "name": "solid rock",
+    "symbol": "#",
+    "color": "white",
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_rock_floor",
+      "ter_set_bashed_from_above": "t_rock_floor_no_roof",
+      "items": [
+        { "item": "rock", "count": [ 65, 85 ] },
+        { "item": "sharp_rock", "count": [ 5, 9 ] },
+        { "item": "scrap_copper", "count": [ 8, 12 ] },
+        { "item": "Fox_sphalerite", "count": [ 2, 6 ] },
+        { "item": "Fox_cassiterite", "count": [ 3, 8 ] },
+        { "item": "material_limestone", "charges": [ 10, 25 ], "prob": 80 },
+        { "group": "rock_mining_extra", "prob": 25 }
+      ],
+      "//": "Stone obstacles have double the expected reduction but lower destroy_threshold in return",
+      "ranged": { "reduction": [ 100, 200 ], "destroy_threshold": 200 }
+    }
+  }
+]

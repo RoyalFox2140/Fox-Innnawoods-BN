@@ -1,0 +1,38 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "Fox_cassiterite",
+    "looks_like": "material_limestone",
+    "category": "spare_parts",
+    "price": "50 cent",
+    "price_postapoc": "10 cent",
+    "name": { "str_sp": "chunk of cassiterite" },
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": "A small chunk of cassiterite, roughly 80% tin by weight. Can be refined to remove the oxides and purify it.",
+    "material": "stone",
+    "volume": "250 ml",
+    "weight": "1200 g",
+    "bashing": 1,
+    "flags": [ "NO_SALVAGE" ],
+    "stackable": true
+  },
+  {
+    "type": "GENERIC",
+    "id": "Fox_sphalerite",
+    "looks_like": "material_limestone",
+    "category": "spare_parts",
+    "price": "50 cent",
+    "price_postapoc": "10 cent",
+    "name": { "str_sp": "chunk of sphalerite" },
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": "A small chunk of shphalerite, roughly 60% zinc and 30% sulfur. Can be refined to remove impurities and yield both.",
+    "material": "stone",
+    "volume": "250 ml",
+    "weight": "1000 g",
+    "bashing": 1,
+    "flags": [ "NO_SALVAGE" ],
+    "stackable": true
+  }
+]
