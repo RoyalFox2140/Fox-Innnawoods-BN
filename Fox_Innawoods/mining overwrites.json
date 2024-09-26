@@ -104,8 +104,7 @@
   {
     "type": "terrain",
     "id": "Fox_stickfence",
-    "alias": [ "t_splitrail_fence_h", "t_splitrail_fence_v" ],
-    "name": "split rail fence",
+    "name": "stick fence",
     "description": "A weak fence made of pointy sticks pounded into the ground. It will keep in small animals but don't expect it to stop a cow.",
     "symbol": "LINE_OXOX",
     "color": "brown",
