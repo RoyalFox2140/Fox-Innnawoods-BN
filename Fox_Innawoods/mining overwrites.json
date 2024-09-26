@@ -14,7 +14,7 @@
       "items": [
         { "item": "rock", "count": [ 16, 26 ] },
         { "item": "sharp_rock", "count": [ 0, 6 ] },
-        { "item": "scrap_copper", "count": [ 0, 7 ] },
+        { "item": "scrap_copper", "count": [ 2, 11 ] },
         { "item": "Fox_sphalerite", "count": [ 0, 1 ] },
         { "item": "Fox_cassiterite", "count": [ 0, 2 ] },
         { "item": "material_limestone", "charges": [ 3, 8 ], "prob": 80 },
@@ -39,7 +39,7 @@
       "items": [
         { "item": "rock", "count": [ 35, 45 ] },
         { "item": "sharp_rock", "count": [ 3, 7 ] },
-        { "item": "scrap_copper", "count": [ 3, 12 ] },
+        { "item": "scrap_copper", "count": [ 5, 16 ] },
         { "item": "Fox_sphalerite", "count": [ 0, 2 ] },
         { "item": "Fox_cassiterite", "count": [ 1, 4 ] },
         { "item": "material_limestone", "charges": [ 5, 15 ], "prob": 80 },
@@ -63,9 +63,10 @@
       "items": [
         { "item": "rock", "count": [ 45, 65 ] },
         { "item": "sharp_rock", "count": [ 4, 7 ] },
-        { "item": "scrap_copper", "count": [ 7, 12 ] },
+        { "item": "scrap_copper", "count": [ 7, 20 ] },
         { "item": "Fox_sphalerite", "count": [ 1, 6 ] },
         { "item": "Fox_cassiterite", "count": [ 2, 8 ] },
+        { "item": "Fox_galena", "count": [ 1, 2 ] },
         { "item": "material_limestone", "charges": [ 8, 20 ], "prob": 80 },
         { "group": "rock_mining_extra", "prob": 20 }
       ],
@@ -89,14 +90,81 @@
       "items": [
         { "item": "rock", "count": [ 65, 85 ] },
         { "item": "sharp_rock", "count": [ 5, 9 ] },
-        { "item": "scrap_copper", "count": [ 8, 12 ] },
+        { "item": "scrap_copper", "count": [ 12, 20 ] },
         { "item": "Fox_sphalerite", "count": [ 2, 6 ] },
         { "item": "Fox_cassiterite", "count": [ 3, 8 ] },
+        { "item": "Fox_galena", "count": [ 1, 3 ] },
         { "item": "material_limestone", "charges": [ 10, 25 ], "prob": 80 },
         { "group": "rock_mining_extra", "prob": 25 }
       ],
       "//": "Stone obstacles have double the expected reduction but lower destroy_threshold in return",
       "ranged": { "reduction": [ 100, 200 ], "destroy_threshold": 200 }
     }
+  },
+  {
+    "type": "terrain",
+    "id": "Fox_stickfence",
+    "alias": [ "t_splitrail_fence_h", "t_splitrail_fence_v" ],
+    "name": "split rail fence",
+    "description": "A weak fence made of pointy sticks pounded into the ground. It will keep in small animals but don't expect it to stop a cow.",
+    "symbol": "LINE_OXOX",
+    "color": "brown",
+    "looks_like": "t_splitrail_fence",
+    "move_cost": 0,
+    "coverage": 60,
+    "examine_action": "chainfence",
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "THIN_OBSTACLE",
+      "PERMEABLE",
+      "FLAMMABLE_ASH",
+      "CLIMBABLE",
+      "AUTO_WALL_SYMBOL",
+      "BURROWABLE"
+    ],
+    "connects_to": "WOODFENCE",
+    "deconstruct": { "ter_set": "t_dirt", "items": [ { "item": "pointy_stick", "count": 8 } ] },
+    "bash": {
+      "str_min": 2,
+      "str_max": 8,
+      "sound": "whump!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "pointy_stick", "count": [ 4, 6 ] } ],
+      "ranged": { "reduction": [ 3, 5 ], "destroy_threshold": 12, "block_unaimed_chance": "50%" }
+    }
+  },
+  {
+    "type": "construction_group",
+    "id": "Fox_build_stickfence",
+    "name": "Build Stick Fence"
+  },
+  {
+    "type": "construction",
+    "id": "Foxconstr_stickfence",
+    "group": "Fox_build_stickfence",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 0 ] ],
+    "time": "40 m",
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ], [ { "id": "DIG", "level": 2 } ] ],
+    "components": [ [ [ "pointy_stick", 8 ], [ "spear_wood", 8 ] ] ],
+    "pre_flags": "DIGGABLE",
+    "post_terrain": "Fox_stickfence"
+  },
+  {
+    "type": "furniture",
+    "id": "f_mutpoppy",
+    "name": "poppy flower",
+    "description": "These strange flowers can be used for medicinal purposes.",
+    "symbol": "f",
+    "color": "light_red",
+    "looks_like": "f_dandelion",
+    "move_cost_mod": 0,
+    "required_str": -1,
+    "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn" ], "entries": [ { "drop": "poppy_bud", "base_num": [ 1, 4 ] } ] } ],
+    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER" ],
+    "examine_action": "harvest_furn",
+    "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
   }
 ]

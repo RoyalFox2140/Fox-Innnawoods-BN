@@ -16,6 +16,14 @@
     "components": [ [ [ "zinc_metal", 600 ] ], [ [ "chem_sulphur", 468 ] ] ]
   },
   {
+    "result": "Fox_galena",
+    "type": "uncraft",
+    "time": "5 m",
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 10, "LIST" ] ] ],
+    "components": [ [ [ "lead", 900 ] ], [ [ "chem_sulphur", 155 ] ] ]
+  },
+  {
     "result": "cattail_jelly",
     "type": "recipe",
     "category": "CC_OTHER",
@@ -35,4 +43,102 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "cattail_stalk", 4 ] ] ]
   }
+  {
+    "type": "recipe",
+    "result": "poppy_sleep",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 2,
+    "autolearn": [ [ "cooking", 3 ] [ "survival", 3 ] ],
+    "time": "5 m",
+    "batch_time_factors": [ 80, 5 ],
+    "book_learn": [
+      [ "textbook_chemistry", 2 ],
+      [ "adv_chemistry", 2 ],
+      [ "pocket_survival", 3 ],
+      [ "atomic_survival", 2 ],
+      [ "textbook_survival", 2 ],
+      [ "survival_book", 3 ],
+      [ "isherwood_herbal_remedies", 2 ]
+    ],
+    "qualities": [ { "id": "CHEM", "level": 2 } ],
+    "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
+    "components": [ [ [ "Foxseed_poppy", 16 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "poppy_pain",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 2,
+    "autolearn": [ [ "cooking", 3 ] [ "survival", 3 ] ],
+    "time": "5 m",
+    "batch_time_factors": [ 80, 5 ],
+    "book_learn": [
+      [ "textbook_chemistry", 2 ],
+      [ "adv_chemistry", 2 ],
+      [ "pocket_survival", 3 ],
+      [ "atomic_survival", 2 ],
+      [ "textbook_survival", 2 ],
+      [ "survival_book", 3 ],
+      [ "isherwood_herbal_remedies", 2 ]
+    ],
+    "qualities": [ { "id": "CHEM", "level": 2 } ],
+    "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
+    "components": [ [ [ "poppy_bud", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "poppysyrup",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 2,
+    "autolearn": [ [ "cooking", 3 ] [ "survival", 3 ] ],
+    "time": "5 m",
+    "batch_time_factors": [ 80, 5 ],
+    "book_learn": [
+      [ "textbook_chemistry", 2 ],
+      [ "adv_chemistry", 2 ],
+      [ "pocket_survival", 3 ],
+      [ "atomic_survival", 2 ],
+      [ "textbook_survival", 2 ],
+      [ "survival_book", 3 ],
+      [ "isherwood_herbal_remedies", 2 ]
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
+    "components": [ [ [ "poppy_bud", 2 ] ], [ [ "Foxseed_poppy", 4 ] ] ]
+  },
+  {
+    "result": "Foxseed_poppy",
+    "type": "recipe",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_SEEDS",
+    "skill_used": "survival",
+    "difficulty": 3,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "poppy_bud", 1 ] ] ],
+    "flags": [ "ALLOW_ROTTEN" ]
+  },
+  {
+    "result": "Foxseed_sapling",
+    "type": "recipe",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_SEEDS",
+    "skill_used": "survival",
+    "difficulty": 2,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "acorns", 1 ] ] ],
+    "flags": [ "ALLOW_ROTTEN" ]
+  },
 ]

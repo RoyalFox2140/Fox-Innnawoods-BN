@@ -9,7 +9,7 @@
     "name": { "str_sp": "chunk of cassiterite" },
     "symbol": "=",
     "color": "dark_gray",
-    "description": "A small chunk of cassiterite, roughly 80% tin by weight. Can be refined to remove the oxides and purify it.",
+    "description": "A small chunk of cassiterite, roughly 80% tin. Can be refined to remove the oxides and purify it.",
     "material": "stone",
     "volume": "250 ml",
     "weight": "1200 g",
@@ -34,5 +34,41 @@
     "bashing": 1,
     "flags": [ "NO_SALVAGE" ],
     "stackable": true
+  },
+  {
+    "type": "GENERIC",
+    "id": "Fox_galena",
+    "looks_like": "material_limestone",
+    "category": "spare_parts",
+    "price": "50 cent",
+    "price_postapoc": "10 cent",
+    "name": { "str_sp": "chunk of galena" },
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": "A small chunk of galena, roughly 90% lead and 10% sulfur. Can be refined to remove impurities and yield both.",
+    "material": "stone",
+    "volume": "250 ml",
+    "weight": "1800 g",
+    "bashing": 1,
+    "flags": [ "NO_SALVAGE" ],
+    "stackable": true
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "Foxseed_poppy",
+    "copy-from": "seed",
+    "name": { "str_sp": "poppy seeds" },
+    "color": "green",
+    "description": "Some poppy seeds.",
+    "seed_data": { "plant_name": "poppy", "fruit": "poppy_bud", "byproducts": [ "withered" ], "grow": "14 days" }
+  }
+  {
+    "type": "COMESTIBLE",
+    "id": "Foxseed_sapling",
+    "copy-from": "seed",
+    "name": { "str_sp": "sapling seeds" },
+    "color": "green",
+    "description": "Some acorns hand selected and ready to grow a tree, but you don't have time to wait for it to fully grow, you can harvest long sticks from the sapling.",
+    "seed_data": { "plant_name": "dahlia", "fruit": "stick_long", "byproducts": [ "withered" ], "grow": "28 days" }
   }
 ]
