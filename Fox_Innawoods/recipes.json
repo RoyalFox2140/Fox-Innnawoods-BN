@@ -42,7 +42,7 @@
     ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "cattail_stalk", 4 ] ] ]
-  }
+  },
   {
     "type": "recipe",
     "result": "poppy_sleep",
@@ -51,7 +51,7 @@
     "skill_used": "cooking",
     "skills_required": [ "survival", 1 ],
     "difficulty": 2,
-    "autolearn": [ [ "cooking", 3 ] [ "survival", 3 ] ],
+    "autolearn": [ [ "cooking", 3 ], [ "survival", 3 ] ],
     "time": "5 m",
     "batch_time_factors": [ 80, 5 ],
     "book_learn": [
@@ -75,7 +75,7 @@
     "skill_used": "cooking",
     "skills_required": [ "survival", 1 ],
     "difficulty": 2,
-    "autolearn": [ [ "cooking", 3 ] [ "survival", 3 ] ],
+    "autolearn": [ [ "cooking", 3 ], [ "survival", 3 ] ],
     "time": "5 m",
     "batch_time_factors": [ 80, 5 ],
     "book_learn": [
@@ -99,7 +99,7 @@
     "skill_used": "cooking",
     "skills_required": [ "survival", 1 ],
     "difficulty": 2,
-    "autolearn": [ [ "cooking", 3 ] [ "survival", 3 ] ],
+    "autolearn": [ [ "cooking", 3 ], [ "survival", 3 ] ],
     "time": "5 m",
     "batch_time_factors": [ 80, 5 ],
     "book_learn": [
@@ -140,5 +140,5 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "acorns", 1 ] ] ],
     "flags": [ "ALLOW_ROTTEN" ]
-  },
+  }
 ]

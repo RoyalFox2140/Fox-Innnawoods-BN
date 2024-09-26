@@ -61,7 +61,7 @@
     "color": "green",
     "description": "Some poppy seeds.",
     "seed_data": { "plant_name": "poppy", "fruit": "poppy_bud", "byproducts": [ "withered" ], "grow": "14 days" }
-  }
+  },
   {
     "type": "COMESTIBLE",
     "id": "Foxseed_sapling",
