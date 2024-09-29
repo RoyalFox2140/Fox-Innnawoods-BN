@@ -71,6 +71,6 @@
     "name": { "str_sp": "sapling seeds" },
     "color": "green",
     "description": "Some acorns hand selected and ready to grow a tree, but you don't have time to wait for it to fully grow, you can harvest long sticks from the sapling.",
-    "seed_data": { "plant_name": "dahlia", "fruit": "stick_long", "byproducts": [ "withered" ], "grow": "28 days" }
+    "seed_data": { "plant_name": "sapling", "fruit": "stick_long", "byproducts": [ "withered" ], "grow": "28 days" }
   }
 ]
