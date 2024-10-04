@@ -72,5 +72,15 @@
     "color": "green",
     "description": "Some acorns hand selected and ready to grow a tree, but you don't have time to wait for it to fully grow, you can harvest long sticks from the sapling.",
     "seed_data": { "plant_name": "sapling", "fruit": "stick_long", "byproducts": [ "withered" ], "grow": "28 days" }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "Foxseed_grass",
+    "copy-from": "seed",
+    "looks_like": "seed_corn",
+    "name": { "str_sp": "grass seeds" },
+    "color": "green",
+    "description": "Some grass seeds picked from a pile of straw, you can use it to grow more grass.",
+    "seed_data": { "plant_name": "pile of straw", "fruit": "straw_pile", "grow": "4 days" }
   }
 ]

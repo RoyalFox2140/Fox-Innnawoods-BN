@@ -29,8 +29,8 @@
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MEDICAL",
     "skill_used": "survival",
-    "difficulty": 1,
-    "autolearn": [ [ "survival", 3 ] ],
+    "difficulty": 4,
+    "autolearn": true,
     "time": "5 m",
     "book_learn": [
       [ "emergency_book", 1 ],
@@ -138,7 +138,20 @@
     "time": "5 m",
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "acorns", 1 ] ] ],
+    "components": [ [ [ "acorns", 1 ], [ "pinecone", 1 ] ] ],
+    "flags": [ "ALLOW_ROTTEN" ]
+  },
+  {
+    "result": "Foxseed_grass",
+    "type": "recipe",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_SEEDS",
+    "skill_used": "survival",
+    "difficulty": 2,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "straw_pile", 1 ] ] ],
     "flags": [ "ALLOW_ROTTEN" ]
   }
 ]
